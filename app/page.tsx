@@ -514,29 +514,6 @@ export default function Home() {
 
               <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
                 <div className="flex items-center mb-6">
-                  <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mr-4 text-3xl">
-                    🕷️
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-gray-900">웹 크롤러</h3>
-                    <span className="text-sm text-blue-600 font-medium">2024.08 ~ 진행중</span>
-                  </div>
-                </div>
-                <div className="flex items-center justify-center">
-                  <span className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium">개발 진행중</span>
-                </div>
-                <p className="text-gray-600 mt-4 text-center">
-                  효율적인 데이터 수집을 위한 고성능 웹 크롤링 시스템
-                </p>
-                <div className="flex flex-wrap gap-2 justify-center mt-4">
-                  {['Python', 'Selenium', 'BeautifulSoup'].map((tech, i) => (
-                    <span key={i} className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">{tech}</span>
-                  ))}
-                </div>
-              </div>
-
-              <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-                <div className="flex items-center mb-6">
                   <div className="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mr-4 text-3xl">
                     🌍
                   </div>
@@ -553,6 +530,29 @@ export default function Home() {
                 </p>
                 <div className="flex flex-wrap gap-2 justify-center mt-4">
                   {['React', 'Node.js', 'MongoDB', 'D3.js'].map((tech, i) => (
+                    <span key={i} className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">{tech}</span>
+                  ))}
+                </div>
+              </div>
+
+              <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                <div className="flex items-center mb-6">
+                  <div className="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mr-4 text-3xl">
+                    📱
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900">심부름 플랫폼 하이브리드 웹앱</h3>
+                    <span className="text-sm text-purple-600 font-medium">2024.08 ~ 진행중</span>
+                  </div>
+                </div>
+                <div className="flex items-center justify-center">
+                  <span className="bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-medium">개발 진행중</span>
+                </div>
+                <p className="text-gray-600 mt-4 text-center">
+                  일상 생활의 심부름을 쉽게 요청하고 처리할 수 있는 모바일 플랫폼
+                </p>
+                <div className="flex flex-wrap gap-2 justify-center mt-4">
+                  {['React Native', 'Node.js', 'MongoDB', 'Socket.io'].map((tech, i) => (
                     <span key={i} className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">{tech}</span>
                   ))}
                 </div>
