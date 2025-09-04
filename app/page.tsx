@@ -290,17 +290,7 @@ export default function Home() {
         {/* About Section */}
         <section id="about" className="min-h-screen bg-white flex items-center justify-center">
           <div className="max-w-4xl mx-auto px-4 text-center">
-            <h1 className="text-5xl font-bold text-gray-900 mb-6">About Me</h1>
-            <p className="text-xl text-gray-600 leading-relaxed mb-6">
-              안녕하세요! 저는 끊임없이 성장하는 풀스택 개발자입니다. 🚀<br />
-              현재 금융, AI, ESG 도메인에서 사용자 중심의 웹 서비스를 개발하고 있으며,<br />
-              Web3, AI/ML, 클라우드 네이티브 기술 등 미래 지향적인 기술 스택을 학습하며<br />
-              새로운 도전을 통해 더 나은 개발자로 발전하고자 합니다.
-            </p>
-            <p className="text-lg text-gray-500">
-              &quot;기술은 사람을 위해 존재한다&quot;는 철학으로 더 나은 사용자 경험을 만들어갑니다.
-            </p>
-            <div className="mt-12">
+            <div className="mb-12">
               <div className="w-64 h-64 mx-auto rounded-full bg-gradient-to-br from-blue-400 to-purple-500 shadow-lg flex items-center justify-center overflow-hidden">
                 <img 
                   src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face&auto=format"
@@ -313,6 +303,16 @@ export default function Home() {
                 />
               </div>
             </div>
+            <h1 className="text-5xl font-bold text-gray-900 mb-6">About Me</h1>
+            <p className="text-xl text-gray-600 leading-relaxed mb-6">
+              안녕하세요! 저는 끊임없이 성장하는 풀스택 개발자입니다. 🚀<br />
+              현재 금융, AI, ESG 도메인에서 사용자 중심의 웹 서비스를 개발하고 있으며,<br />
+              Web3, AI/ML, 클라우드 네이티브 기술 등 미래 지향적인 기술 스택을 학습하며<br />
+              새로운 도전을 통해 더 나은 개발자로 발전하고자 합니다.
+            </p>
+            <p className="text-lg text-gray-500">
+              &quot;기술은 사람을 위해 존재한다&quot;는 철학으로 더 나은 사용자 경험을 만들어갑니다.
+            </p>
           </div>
         </section>
 
@@ -514,29 +514,6 @@ export default function Home() {
 
               <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
                 <div className="flex items-center mb-6">
-                  <div className="w-16 h-16 bg-blue-100 rounded-xl flex items-center justify-center mr-4 text-3xl">
-                    🕷️
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-gray-900">웹 크롤러</h3>
-                    <span className="text-sm text-blue-600 font-medium">2024.08 ~ 진행중</span>
-                  </div>
-                </div>
-                <div className="flex items-center justify-center">
-                  <span className="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium">개발 진행중</span>
-                </div>
-                <p className="text-gray-600 mt-4 text-center">
-                  효율적인 데이터 수집을 위한 고성능 웹 크롤링 시스템
-                </p>
-                <div className="flex flex-wrap gap-2 justify-center mt-4">
-                  {['Python', 'Selenium', 'BeautifulSoup'].map((tech, i) => (
-                    <span key={i} className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">{tech}</span>
-                  ))}
-                </div>
-              </div>
-
-              <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
-                <div className="flex items-center mb-6">
                   <div className="w-16 h-16 bg-green-100 rounded-xl flex items-center justify-center mr-4 text-3xl">
                     🌍
                   </div>
@@ -557,13 +534,109 @@ export default function Home() {
                   ))}
                 </div>
               </div>
+
+              <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                <div className="flex items-center mb-6">
+                  <div className="w-16 h-16 bg-purple-100 rounded-xl flex items-center justify-center mr-4 text-3xl">
+                    📱
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900">위치기반 심부름 플랫폼 하이브리드 웹앱</h3>
+                    <span className="text-sm text-purple-600 font-medium">2024.08 ~ 진행중</span>
+                  </div>
+                </div>
+                <div className="flex items-center justify-center">
+                  <span className="bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-medium">개발 진행중</span>
+                </div>
+                <p className="text-gray-600 mt-4 text-center">
+                  일상 생활의 심부름을 쉽게 요청하고 처리할 수 있는 모바일 플랫폼
+                </p>
+                <div className="flex flex-wrap gap-2 justify-center mt-4">
+                  {['React Native', 'Node.js', 'MongoDB', 'Socket.io'].map((tech, i) => (
+                    <span key={i} className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">{tech}</span>
+                  ))}
+                </div>
+              </div>
             </div>
 
             <div className="text-center mt-12">
               <p className="text-lg text-gray-600">
-                💡 새로운 기술과 트렌드를 적극적으로 학습하며 개인 프로젝트를 통해 실무 역량을 향상시키고 있습니다.
+                💡 새로운 기술과 하나원큐 놀이터 머니트렌드 웹뷰트렌드를 적극적으로 학습하며 개인 프로젝트를 통해 실무 역량을 향상시키고 있습니다.
               </p>
             </div>
+          </div>
+        </section>
+
+        {/* 진행 중인 개인 프로젝트 Section */}
+        <section className="py-20 bg-white">
+          <div className="max-w-6xl mx-auto px-4">
+            <h2 className="text-4xl font-bold text-center text-gray-900 mb-16">진행 중인 개인 프로젝트</h2>
+            
+            {/* Map API 기반 심부름 플랫폼 */}
+            <div className="mb-16">
+              <div className="bg-white p-8 rounded-xl shadow-lg">
+                <div className="flex flex-col lg:flex-row gap-8 items-center">
+                  {/* 프로젝트 이미지 */}
+                  <div className="flex-shrink-0">
+                    <img 
+                      src="/project2.png"
+                      alt="지도 API 기반 심부름 플랫폼"
+                      className="max-w-full h-auto rounded-lg shadow-md"
+                      style={{ maxHeight: '400px', maxWidth: '500px' }}
+                      onError={(e) => {
+                        // 이미지 로드 실패시 대체 콘텐츠 표시
+                        e.currentTarget.style.display = 'none';
+                        if(e.currentTarget.parentElement) {
+                          e.currentTarget.parentElement.innerHTML = '<div class="flex items-center justify-center bg-gray-100 rounded-lg p-8 w-96 h-64"><span class="text-4xl">🗺️</span><span class="ml-4 text-gray-600">지도 기반 플랫폼</span></div>';
+                        }
+                      }}
+                    />
+                  </div>
+                  
+                  {/* 프로젝트 설명 */}
+                  <div className="flex-grow">
+                    <div className="flex items-center mb-4">
+                      <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4 text-2xl">
+                        📍
+                      </div>
+                      <h3 className="text-2xl font-bold text-gray-900">지도 API 기반 심부름 플랫폼</h3>
+                    </div>
+                    
+                    <div className="flex items-center mb-4">
+                      <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">개발 진행중</span>
+                      <span className="ml-3 text-gray-500 text-sm">2024.08 ~ 현재</span>
+                    </div>
+                    
+                    <div className="space-y-3 mb-6">
+                      <p className="text-gray-700 text-lg font-semibold">위치 기반 심부름 매칭 서비스</p>
+                      <ul className="text-gray-600 space-y-2 list-disc list-inside">
+                        <li>실시간 지도 API를 활용한 위치 기반 심부름 요청/수행 매칭</li>
+                        <li>GPS 기반 주변 심부름 검색 및 거리별 정렬 기능</li>
+                        <li>사용 안전성을 위한 사용자 인증 도입 ( 예정 )</li>
+                        <li>결제 시스템 및 리뷰 평점 관리 ( 예정 )</li>
+                      </ul>
+                    </div>
+                    
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      <span className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm">React Native</span>
+                      <span className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm">Node.js</span>
+                      <span className="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm">MongoDB</span>
+                      <span className="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm">Socket.io</span>
+                      <span className="bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm">Kakao Map API</span>
+                      <span className="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm">GPS</span>
+                    </div>
+                    
+                    <div className="bg-blue-50 p-4 rounded-lg">
+                      <p className="text-blue-800 text-sm">
+                        <strong>💡 주요 특징:</strong> 일상생활에서 필요한 다양한 심부름(배달, 대행, 구매 등)을 
+                        지도 기반으로 쉽게 요청하고 처리할 수 있는 O2O 플랫폼을 개발 중입니다.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
           </div>
         </section>
 
