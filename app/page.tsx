@@ -641,6 +641,96 @@ export default function Home() {
               </div>
             </div>
             
+            {/* ERP 제조관리 시스템 */}
+            <div className="mb-16">
+              <div className="bg-white p-8 rounded-xl shadow-lg">
+                <div className="flex flex-col lg:flex-row gap-8 items-center">
+                  <img src="/privatepjt2.png" alt="ERP 제조관리 시스템" className="max-w-full h-auto rounded-lg shadow-md" style={{ maxHeight: '400px', maxWidth: '500px' }} />                  
+                  {/* 프로젝트 설명 */}
+                  <div className="flex-grow">
+                    <div className="flex items-center mb-4">
+                      <div className="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center mr-4 text-2xl">
+                        ⚙️
+                      </div>
+                      <h3 className="text-2xl font-bold text-gray-900">ERP 제조관리 시스템 (Full-Stack Web Application)</h3>
+                    </div>
+                    
+                    <div className="flex items-center mb-4">
+                      <span className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm font-medium">개발 진행중</span>
+                      <span className="ml-3 text-gray-500 text-sm">2024.09 ~ 현재</span>
+                    </div>
+                    
+                    <div className="space-y-4 mb-6">
+                      <div>
+                        <p className="text-gray-700 text-lg font-semibold mb-2">기술 스택:</p>
+                        <ul className="text-gray-600 space-y-1 list-disc list-inside ml-4">
+                          <li><strong>Frontend:</strong> Next.js 14, TypeScript, Tailwind CSS, Zustand</li>
+                          <li><strong>Backend:</strong> Node.js, Express.js, TypeScript</li>
+                          <li><strong>Database:</strong> MongoDB (Mongoose ODM)</li>
+                          <li><strong>Authentication:</strong> JWT, bcrypt</li>
+                          <li><strong>File Processing:</strong> ExcelJS, jsPDF</li>
+                          <li><strong>Testing:</strong> Jest, Supertest, Playwright</li>
+                        </ul>
+                      </div>
+                      
+                      <div>
+                        <p className="text-gray-700 text-lg font-semibold mb-2">주요 기능:</p>
+                        <ul className="text-gray-600 space-y-1 list-disc list-inside ml-4">
+                          <li>사용자 관리 (Admin/Manager/User 권한)</li>
+                          <li>재고 관리 및 실시간 추적</li>
+                          <li>생산 계획 및 작업 지시서 관리</li>
+                          <li>구매 요청 및 발주 관리</li>
+                          <li>품질 검사 및 품질 관리</li>
+                          <li>회계 및 리포팅 (Excel/PDF 출력)</li>
+                          <li>대시보드 및 데이터 시각화</li>
+                        </ul>
+                      </div>
+                      
+                      <div>
+                        <p className="text-gray-700 text-lg font-semibold mb-2">특징:</p>
+                        <ul className="text-gray-600 space-y-1 list-disc list-inside ml-4">
+                          <li>RESTful API 설계</li>
+                          <li>JWT 기반 인증/인가</li>
+                          <li>MongoDB 인덱싱 최적화</li>
+                          <li>TypeScript 타입 안정성</li>
+                          <li>반응형 UI/UX</li>
+                          <li>실시간 데이터 처리</li>
+                          <li>다중 사용자 권한 관리</li>
+                          <li>엑셀 데이터 Import/Export</li>
+                        </ul>
+                      </div>
+                      
+                      <div>
+                        <p className="text-gray-700 text-lg font-semibold mb-2">개발 환경:</p>
+                        <ul className="text-gray-600 space-y-1 list-disc list-inside ml-4">
+                          <li>개발서버: Concurrently로 Frontend/Backend 동시 실행</li>
+                          <li>테스트: 단위/통합/E2E 테스트 구축</li>
+                          <li>시드 데이터: 개발용 샘플 데이터 자동 생성</li>
+                        </ul>
+                      </div>
+                    </div>
+                    
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      <span className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm">Next.js 14</span>
+                      <span className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm">TypeScript</span>
+                      <span className="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm">MongoDB</span>
+                      <span className="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm">Express.js</span>
+                      <span className="bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm">JWT</span>
+                      <span className="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm">Zustand</span>
+                      <span className="bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-sm">ExcelJS</span>
+                    </div>
+                    
+                    <div className="bg-indigo-50 p-4 rounded-lg">
+                      <p className="text-indigo-800 text-sm">
+                        <strong>💡 주요 특징:</strong> 제조업체의 전체 운영 프로세스를 디지털화하여 효율적인 생산 관리, 
+                        재고 추적, 품질 관리를 통합적으로 제공하는 풀스택 ERP 시스템을 개발 중입니다.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
           </div>
         </section>
 
