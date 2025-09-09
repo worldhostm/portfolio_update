@@ -293,7 +293,7 @@ export default function Home() {
             <div className="mb-12">
               <div className="w-64 h-64 mx-auto rounded-full bg-gradient-to-br from-blue-400 to-purple-500 shadow-lg flex items-center justify-center overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face&auto=format"
+                  src="/profile_cho.jpeg"
                   alt="Profile"
                   className="w-full h-full object-cover"
                   onError={(e) => {
@@ -492,7 +492,7 @@ export default function Home() {
           <div className="max-w-6xl mx-auto px-4">
             <h2 className="text-5xl font-bold text-center text-gray-900 mb-16">현재 개인 프로젝트 진행</h2>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
                 <div className="flex items-center mb-6">
                   <div className="w-16 h-16 bg-orange-100 rounded-xl flex items-center justify-center mr-4 text-3xl">
@@ -557,6 +557,29 @@ export default function Home() {
                 </p>
                 <div className="flex flex-wrap gap-2 justify-center mt-4">
                   {['React Native', 'Node.js', 'MongoDB', 'Socket.io'].map((tech, i) => (
+                    <span key={i} className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">{tech}</span>
+                  ))}
+                </div>
+              </div>
+
+              <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                <div className="flex items-center mb-6">
+                  <div className="w-16 h-16 bg-cyan-100 rounded-xl flex items-center justify-center mr-4 text-3xl">
+                    <img src="/ai-image-generator.png" alt="AI 이미지 생성기" className="w-full h-full object-cover" />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900">AI 이미지 생성기</h3>
+                    <span className="text-sm text-cyan-600 font-medium">2024.09 ~ 진행중</span>
+                  </div>
+                </div>
+                <div className="flex items-center justify-center">
+                  <span className="bg-cyan-100 text-cyan-800 px-4 py-2 rounded-full text-sm font-medium">개발 완료</span>
+                </div>
+                <p className="text-gray-600 mt-4 text-center">
+                  텍스트 프롬프트로 고품질 AI 이미지를 생성하는 웹 애플리케이션
+                </p>
+                <div className="flex flex-wrap gap-2 justify-center mt-4">
+                  {['Next.js 15', 'React 19', 'TypeScript', 'Redux Toolkit', 'Replicate API'].map((tech, i) => (
                     <span key={i} className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">{tech}</span>
                   ))}
                 </div>
@@ -724,6 +747,91 @@ export default function Home() {
                       <p className="text-indigo-800 text-sm">
                         <strong>💡 주요 특징:</strong> 제조업체의 전체 운영 프로세스를 디지털화하여 효율적인 생산 관리, 
                         재고 추적, 품질 관리를 통합적으로 제공하는 풀스택 ERP 시스템을 개발 중입니다.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            {/* AI 이미지 생성기 상세 정보 */}
+            <div className="mt-16">
+              <div className="bg-white p-8 rounded-xl shadow-lg">
+                <div className="flex flex-col lg:flex-row gap-8 items-center">
+                  {/* 프로젝트 이미지 */}
+                  <div className="flex-shrink-0">
+                    <div className="flex items-center justify-center bg-gradient-to-br from-cyan-400 to-purple-500 rounded-lg p-8 w-96 h-64">
+                      <div className="text-center text-white">
+                        {/* <span className="text-6xl">🎨</span> */}
+                        <img src="/ai-image-generator.png" alt="AI 이미지 생성기" className="w-full h-full object-cover" />
+                        <p className="mt-4 text-lg font-semibold">AI 이미지 생성기</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* 프로젝트 설명 */}
+                  <div className="flex-grow">
+                    <div className="flex items-center mb-4">
+                      <div className="w-12 h-12 bg-cyan-100 rounded-lg flex items-center justify-center mr-4 text-2xl">
+                        🤖
+                      </div>
+                      <h3 className="text-2xl font-bold text-gray-900">AI 이미지 생성기 (Text-to-Image Generator)</h3>
+                    </div>
+                    
+                    <div className="flex items-center mb-4">
+                      <span className="bg-cyan-100 text-cyan-800 px-3 py-1 rounded-full text-sm font-medium">개발 완료</span>
+                      <span className="ml-3 text-gray-500 text-sm">2024.09 ~ 현재</span>
+                    </div>
+                    
+                    <div className="space-y-4 mb-6">
+                      <div>
+                        <p className="text-gray-700 text-lg font-semibold mb-2">기술 스택:</p>
+                        <ul className="text-gray-600 space-y-1 list-disc list-inside ml-4">
+                          <li><strong>Frontend:</strong> Next.js 15, React 19, TypeScript</li>
+                          <li><strong>상태관리:</strong> Redux Toolkit</li>
+                          <li><strong>스타일링:</strong> Tailwind CSS</li>
+                          <li><strong>AI API:</strong> Replicate API (Stable Diffusion)</li>
+                        </ul>
+                      </div>
+                      
+                      <div>
+                        <p className="text-gray-700 text-lg font-semibold mb-2">핵심 기능:</p>
+                        <ul className="text-gray-600 space-y-1 list-disc list-inside ml-4">
+                          <li>텍스트 프롬프트 기반 AI 이미지 생성 (512x512 고해상도)</li>
+                          <li>NSFW 콘텐츠 자동 차단 및 안전 필터링 시스템</li>
+                          <li>Redux Toolkit을 활용한 전역 상태 관리</li>
+                          <li>실시간 로딩 상태 표시 및 에러 핸들링</li>
+                          <li>생성된 이미지 히스토리 관리 및 그리드 뷰</li>
+                          <li>반응형 모던 UI (모바일/데스크톱 지원)</li>
+                        </ul>
+                      </div>
+                      
+                      <div>
+                        <p className="text-gray-700 text-lg font-semibold mb-2">주요 특징:</p>
+                        <ul className="text-gray-600 space-y-1 list-disc list-inside ml-4">
+                          <li>Stable Diffusion 모델을 통한 고품질 이미지 생성</li>
+                          <li>다중 검증 시스템으로 안전한 콘텐츠 보장</li>
+                          <li>직관적인 사용자 인터페이스</li>
+                          <li>상황별 구체적인 에러 메시지 제공</li>
+                          <li>그라디언트 배경의 모던한 디자인</li>
+                          <li>풀사이즈 이미지 새 탭 열기 기능</li>
+                        </ul>
+                      </div>
+                    </div>
+                    
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      <span className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm">Next.js 15</span>
+                      <span className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm">React 19</span>
+                      <span className="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm">TypeScript</span>
+                      <span className="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm">Redux Toolkit</span>
+                      <span className="bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full text-sm">Tailwind CSS</span>
+                      <span className="bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-sm">Replicate API</span>
+                    </div>
+                    
+                    <div className="bg-cyan-50 p-4 rounded-lg">
+                      <p className="text-cyan-800 text-sm">
+                        <strong>💡 주요 특징:</strong> 사용자가 입력한 텍스트 프롬프트를 바탕으로 Stable Diffusion AI 모델을 활용하여 
+                        고품질의 이미지를 생성하는 웹 애플리케이션입니다. NSFW 필터링과 안전 검증 시스템으로 안전한 콘텐츠 생성을 보장합니다.
                       </p>
                     </div>
                   </div>
