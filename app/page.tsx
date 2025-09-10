@@ -108,7 +108,7 @@ const SideNavigation = () => {
     { id: 'about', label: 'About' },
     { id: 'skills', label: 'Skills' },
     { id: 'projects', label: 'Projects' },
-    { id: 'personal-projects', label: 'Personal' },
+    { id: 'personal_projects', label: 'Personal' },
     { id: 'contact', label: 'Contact' }
   ]
 
@@ -901,7 +901,7 @@ export default function Home() {
                         <p className="text-gray-700 text-lg font-semibold mb-2">⚡ 핵심 기능 및 구현:</p>
                         <ul className="text-gray-600 space-y-1 list-disc list-inside ml-4">
                           <li>실시간 음성 인식: 한국어 음성을 실시간으로 텍스트 변환</li>
-                          <li>자연어 처리: 정규표현식 기반으로 "내일 오후 3시 회의" 등의 자연스러운 표현 해석</li>
+                          <li>자연어 처리: 정규표현식 기반으로 내일 오후 3시 회의 등의 자연스러운 표현 해석</li>
                           <li>음성 피드백: Text-to-Speech로 처리 결과를 음성으로 응답</li>
                           <li>데이터 영속성: localStorage를 통한 일정/메모 데이터 관리</li>
                           <li>반응형 UI: 모바일부터 데스크톱까지 최적화된 인터페이스</li>
