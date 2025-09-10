@@ -573,13 +573,37 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="flex items-center justify-center">
-                  <span className="bg-cyan-100 text-cyan-800 px-4 py-2 rounded-full text-sm font-medium">개발 완료</span>
+                  <span className="bg-cyan-100 text-cyan-800 px-4 py-2 rounded-full text-sm font-medium">개발 진행중</span>
                 </div>
                 <p className="text-gray-600 mt-4 text-center">
                   텍스트 프롬프트로 고품질 AI 이미지를 생성하는 웹 애플리케이션
                 </p>
                 <div className="flex flex-wrap gap-2 justify-center mt-4">
                   {['Next.js 15', 'React 19', 'TypeScript', 'Redux Toolkit', 'Replicate API'].map((tech, i) => (
+                    <span key={i} className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">{tech}</span>
+                  ))}
+                </div>
+              </div>
+
+              <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                <div className="flex items-center mb-6">
+                  <div className="w-16 h-16 bg-emerald-100 rounded-xl flex items-center justify-center mr-4 text-3xl">
+                    {/* 이미지 공간 */}
+                    🎤
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900">음성 비서 AI - 스마트 일정/메모 관리</h3>
+                    <span className="text-sm text-emerald-600 font-medium">2024.09 ~ 진행중</span>
+                  </div>
+                </div>
+                <div className="flex items-center justify-center">
+                  <span className="bg-emerald-100 text-emerald-800 px-4 py-2 rounded-full text-sm font-medium">개발 진행중</span>
+                </div>
+                <p className="text-gray-600 mt-4 text-center">
+                  Web Speech API 기반 음성 인식 웹 애플리케이션
+                </p>
+                <div className="flex flex-wrap gap-2 justify-center mt-4">
+                  {['Next.js 15.5.2', 'React 18', 'TypeScript', 'Zustand', 'Web Speech API'].map((tech, i) => (
                     <span key={i} className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">{tech}</span>
                   ))}
                 </div>
@@ -755,7 +779,7 @@ export default function Home() {
             </div>
             
             {/* AI 이미지 생성기 상세 정보 */}
-            <div className="mt-16">
+            <div className="mb-16">
               <div className="bg-white p-8 rounded-xl shadow-lg">
                 <div className="flex flex-col lg:flex-row gap-8 items-center">
                   {/* 프로젝트 이미지 */}
@@ -779,7 +803,7 @@ export default function Home() {
                     </div>
                     
                     <div className="flex items-center mb-4">
-                      <span className="bg-cyan-100 text-cyan-800 px-3 py-1 rounded-full text-sm font-medium">개발 완료</span>
+                      <span className="bg-cyan-100 text-cyan-800 px-3 py-1 rounded-full text-sm font-medium">개발 진행중</span>
                       <span className="ml-3 text-gray-500 text-sm">2024.09 ~ 현재</span>
                     </div>
                     
@@ -832,6 +856,90 @@ export default function Home() {
                       <p className="text-cyan-800 text-sm">
                         <strong>💡 주요 특징:</strong> 사용자가 입력한 텍스트 프롬프트를 바탕으로 Stable Diffusion AI 모델을 활용하여 
                         고품질의 이미지를 생성하는 웹 애플리케이션입니다. NSFW 필터링과 안전 검증 시스템으로 안전한 콘텐츠 생성을 보장합니다.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* 음성 비서 AI 상세 정보 */}
+            <div className="mb-16">
+              <div className="bg-white p-8 rounded-xl shadow-lg">
+                <div className="flex flex-col lg:flex-row gap-8 items-center">
+                  {/* 프로젝트 이미지 */}
+                  <div className="flex-shrink-0">
+                    <img src="/secretaryai.png" alt="음성 비서 AI" className="w-100 h-auto rounded-lg" />
+                  </div>
+                  {/* 프로젝트 설명 */}
+                  <div className="flex-grow">
+                    <div className="flex items-center mb-4">
+                      <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mr-4 text-2xl">
+                        🗣️
+                      </div>
+                      <h3 className="text-2xl font-bold text-gray-900">음성 비서 AI - 스마트 일정/메모 관리 시스템</h3>
+                    </div>
+                    
+                    <div className="flex items-center mb-4">
+                      <span className="bg-emerald-100 text-emerald-800 px-3 py-1 rounded-full text-sm font-medium">개발 진행중</span>
+                      <span className="ml-3 text-gray-500 text-sm">2024.09 ~ 현재</span>
+                    </div>
+                    
+                    <div className="space-y-4 mb-6">
+                      <div>
+                        <p className="text-gray-700 text-lg font-semibold mb-2">🛠 주요 기술 스택:</p>
+                        <ul className="text-gray-600 space-y-1 list-disc list-inside ml-4">
+                          <li><strong>Frontend:</strong> Next.js 15.5.2, React 18, TypeScript</li>
+                          <li><strong>상태관리:</strong> Zustand (경량 상태 관리)</li>
+                          <li><strong>스타일링:</strong> Tailwind CSS, Lucide React</li>
+                          <li><strong>브라우저 API:</strong> Web Speech API (Speech Recognition/Synthesis)</li>
+                          <li><strong>데이터:</strong> localStorage 기반 클라이언트 사이드 저장</li>
+                        </ul>
+                      </div>
+                      
+                      <div>
+                        <p className="text-gray-700 text-lg font-semibold mb-2">⚡ 핵심 기능 및 구현:</p>
+                        <ul className="text-gray-600 space-y-1 list-disc list-inside ml-4">
+                          <li>실시간 음성 인식: 한국어 음성을 실시간으로 텍스트 변환</li>
+                          <li>자연어 처리: 정규표현식 기반으로 "내일 오후 3시 회의" 등의 자연스러운 표현 해석</li>
+                          <li>음성 피드백: Text-to-Speech로 처리 결과를 음성으로 응답</li>
+                          <li>데이터 영속성: localStorage를 통한 일정/메모 데이터 관리</li>
+                          <li>반응형 UI: 모바일부터 데스크톱까지 최적화된 인터페이스</li>
+                        </ul>
+                      </div>
+                      
+                      <div>
+                        <p className="text-gray-700 text-lg font-semibold mb-2">🎯 기술적 도전과 해결:</p>
+                        <ul className="text-gray-600 space-y-1 list-disc list-inside ml-4">
+                          <li>브라우저 호환성: Web Speech API 지원 여부 체크 및 fallback 처리</li>
+                          <li>SSR 이슈: Next.js 서버사이드에서 window 객체 접근 문제 해결</li>
+                          <li>실시간 상태 관리: Zustand로 음성 인식 상태와 UI 동기화</li>
+                          <li>자연어 파싱: 다양한 한국어 시간/날짜 표현을 코드로 해석하는 알고리즘 구현</li>
+                        </ul>
+                      </div>
+                      
+                      <div>
+                        <p className="text-gray-700 text-lg font-semibold mb-2">📈 프로젝트 성과:</p>
+                        <ul className="text-gray-600 space-y-1 list-disc list-inside ml-4">
+                          <li>모던 웹 기술과 브라우저 네이티브 API를 결합한 사용자 친화적 음성 인터페이스 구현</li>
+                          <li>TypeScript를 통한 타입 안전성 확보와 모듈화된 아키텍처로 확장 가능한 코드 구조 설계</li>
+                        </ul>
+                      </div>
+                    </div>
+                    
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      <span className="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-sm">Next.js 15.5.2</span>
+                      <span className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm">React 18</span>
+                      <span className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm">TypeScript</span>
+                      <span className="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm">Zustand</span>
+                      <span className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm">Web Speech API</span>
+                      <span className="bg-teal-100 text-teal-700 px-3 py-1 rounded-full text-sm">Tailwind CSS</span>
+                    </div>
+                    
+                    <div className="bg-emerald-50 p-4 rounded-lg">
+                      <p className="text-emerald-800 text-sm">
+                        <strong>💡 주요 특징:</strong> 브라우저의 네이티브 음성 API를 활용하여 사용자가 자연스러운 한국어로 일정 등록과 메모 작성을 할 수 있는 스마트 음성 비서입니다.
+                        실시간 음성-텍스트 변환, 자연어 처리, 그리고 음성 피드백까지 제공하는 완전한 음성 인터페이스를 구현했습니다.
                       </p>
                     </div>
                   </div>
