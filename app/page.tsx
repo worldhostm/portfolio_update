@@ -247,17 +247,36 @@ export default function Home() {
                     </div>
                   </div>
 
-                  <div className="bg-white p-6 rounded-lg shadow-md border-2 border-dashed border-gray-300">
+                  <div className="bg-white p-6 rounded-lg shadow-md">
                     <div className="flex items-center mb-4">
-                      <div className="w-12 h-12 bg-gray-200 rounded-lg flex items-center justify-center mr-4 text-2xl opacity-50">
-                        🚚
+                      <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4 text-2xl">
+                        🔗
                       </div>
-                      <h4 className="text-lg font-semibold text-gray-600">SCM 공급망 관리 시스템</h4>
+                      <h4 className="text-lg font-semibold text-gray-900">SCM 공급망 관리 시스템</h4>
                     </div>
-                    <p className="text-sm text-gray-500 mb-3">풀스택 개발자</p>
-                    <p className="text-gray-500 mb-4">상세 내용 추가 예정</p>
-                    <div className="bg-gray-50 p-4 rounded text-center">
-                      <p className="text-gray-500 text-sm">준비 중인 섹션입니다</p>
+                    <p className="text-sm text-emerald-600 mb-3">프론트엔드 개발자</p>
+                    <p className="text-gray-700 mb-4">공급사 대상 ESG 설문을 생성·배포·운영하는 공급망 관리 플랫폼 프론트엔드 개발</p>
+                    <div className="space-y-2 mb-4">
+                      <div className="text-sm text-gray-700">
+                        <span className="font-semibold">설문 생성 및 대상 설정:</span> 설문 생성, 응답 대상 공급사 지정, 담당자 배정 화면 개발
+                      </div>
+                      <div className="text-sm text-gray-700">
+                        <span className="font-semibold">다국어 번역 및 이메일:</span> 설문 다국어(i18n) 번역 UI, 발송 이메일 작성 화면 개발
+                      </div>
+                      <div className="text-sm text-gray-700">
+                        <span className="font-semibold">설문 대시보드:</span> 응답·미응답 기업 현황, 설문 참여율, 담당자 변경, 설문 재요청 및 개선 메일 발송 기능 구현
+                      </div>
+                      <div className="text-sm text-gray-700">
+                        <span className="font-semibold">설문 응답 화면:</span> Zod 스키마 기반 유효성 검사 적용, 다양한 문항 타입 렌더링
+                      </div>
+                      <div className="text-sm text-gray-700">
+                        <span className="font-semibold">공급사 관리:</span> 공급사 추가·조회 화면 개발
+                      </div>
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                      {['Next.js', 'TypeScript', 'Zod', 'i18n', 'React Hook Form'].map((tech, i) => (
+                        <span key={i} className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs">{tech}</span>
+                      ))}
                     </div>
                   </div>
                 </div>
