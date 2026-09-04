@@ -122,93 +122,14 @@ export default function Home() {
           <div className="max-w-6xl mx-auto px-4">
             <h2 className="text-4xl font-bold text-center text-gray-900 mb-16">Projects & Career</h2>
             
-            {/* Current Position */}
-            <div className="mb-16">
-              <div className="bg-blue-50 p-8 rounded-xl shadow-lg border-l-4 border-blue-500">
-                <div className="flex items-center justify-between mb-4">
-                  <h3 className="text-2xl font-bold text-gray-900">주식회사 찬스웨이브커뮤니케이션</h3>
-                  <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">현재 재직중</span>
-                </div>
-                <p className="text-gray-600 mb-6">2024.02 ~ 현재 (1년 6개월) • 정규직</p>
-                
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                  <div className="bg-white p-6 rounded-lg shadow-md">
-                    <div className="flex items-center mb-4">
-                      <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4 text-2xl">
-                        🏦
-                      </div>
-                      <h4 className="text-lg font-semibold text-gray-900">하나은행 놀이터 API 개발</h4>
-                    </div>
-                    <p className="text-sm text-blue-600 mb-3">백엔드 선임연구원</p>
-                    <p className="text-gray-700 mb-4">OAuth 기반 토큰 발급 API와 최신 뉴스 데이터 API 개발</p>
-                    <div className="flex flex-wrap gap-2">
-                      {['OAuth', 'API Development', 'Backend'].map((tech, i) => (
-                        <span key={i} className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">{tech}</span>
-                      ))}
-                    </div>
-                  </div>
-                  
-                  <div className="bg-white p-6 rounded-lg shadow-md">
-                    <div className="flex items-center mb-4">
-                      <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4 text-2xl">
-                        💰
-                      </div>
-                      <h4 className="text-lg font-semibold text-gray-900">하나원큐 놀이터 머니트렌드 웹뷰</h4>
-                    </div>
-                    <p className="text-sm text-blue-600 mb-3">프론트 선임매니저</p>
-                    <p className="text-gray-700 mb-4">금융 콘텐츠 에디터 개발 및 웹뷰 프론트/백엔드 개발</p>
-                    <div className="flex flex-wrap gap-2">
-                      {['React', 'Next.js', 'TypeScript', 'Tiptap', 'MongoDB', 'Redis'].map((tech, i) => (
-                        <span key={i} className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">{tech}</span>
-                      ))}
-                    </div>
-                  </div>
-                  
-                  <div className="bg-white p-6 rounded-lg shadow-md">
-                    <div className="flex items-center mb-4">
-                      <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4 text-2xl">
-                        🤖
-                      </div>
-                      <h4 className="text-lg font-semibold text-gray-900">AI 서비스 검색 MVP</h4>
-                    </div>
-                    <p className="text-sm text-blue-600 mb-3">프론트 선임매니저</p>
-                    <p className="text-gray-700 mb-4">AI 서비스 카테고리별 랭킹 및 검색 기능, SEO 최적화</p>
-                    <div className="flex flex-wrap gap-2">
-                      {['React', 'Next.js', 'TypeScript', 'SEO'].map((tech, i) => (
-                        <span key={i} className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">{tech}</span>
-                      ))}
-                    </div>
-                    <a href="http://31ais.com" className="text-blue-500 hover:underline text-sm block mt-2">31ais.com →</a>
-                  </div>
-                  
-                  <div className="bg-white p-6 rounded-lg shadow-md">
-                    <div className="flex items-center mb-4">
-                      <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mr-4 text-2xl">
-                        🌱
-                      </div>
-                      <h4 className="text-lg font-semibold text-gray-900">퍼핏랩 ESG 데이터 플랫폼</h4>
-                    </div>
-                    <p className="text-sm text-blue-600 mb-3">프론트 선임매니저</p>
-                    <p className="text-gray-700 mb-4">ESG 공공/민간 데이터, 뉴스, 랭킹 제공 사이트 (반응형)</p>
-                    <div className="flex flex-wrap gap-2">
-                      {['React', 'Next.js', 'TypeScript', 'Zustand', 'MongoDB', 'SEO'].map((tech, i) => (
-                        <span key={i} className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">{tech}</span>
-                      ))}
-                    </div>
-                    <a href="https://pufit.kr" className="text-blue-500 hover:underline text-sm block mt-2">pufit.kr →</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* i-ESG Experience */}
+            {/* Current Position - i-ESG */}
             <div className="mb-16">
               <div className="bg-emerald-50 p-8 rounded-xl shadow-lg border-l-4 border-emerald-500">
                 <div className="flex items-center justify-between mb-4">
                   <h3 className="text-2xl font-bold text-gray-900">주식회사 아이이에스지 (i-ESG)</h3>
-                  <span className="text-gray-500 text-sm">2022.07 - 2024.01 (1년 6개월)</span>
+                  <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">현재 재직중</span>
                 </div>
-                <p className="text-gray-600 mb-6">정규직 • 풀스택 개발자</p>
+                <p className="text-gray-600 mb-6">2025.10 ~ 현재 • 정규직</p>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                   <div className="bg-white p-6 rounded-lg shadow-md">
@@ -257,7 +178,7 @@ export default function Home() {
                     <p className="text-sm text-emerald-600 mb-3">프론트엔드 개발자</p>
                     <p className="text-gray-700 mb-3">공급사 대상 ESG 설문을 생성·배포·운영하는 공급망 관리 플랫폼 프론트엔드 개발</p>
                     <div className="bg-blue-50 border-l-3 border-blue-400 p-3 rounded mb-4">
-                      <p className="text-blue-800 text-sm font-medium">약 2년간 완성되지 못한 프로젝트를 단독으로 인수해 4개월 만에 리뉴얼 완성 및 안정화</p>
+                      <p className="text-blue-800 text-sm font-medium">약 2년간 완성되지 못한 프로젝트를 인수해 4개월 만에 리뉴얼 완성 및 안정화</p>
                     </div>
                     <div className="space-y-2 mb-4">
                       <div className="text-sm text-gray-700">
@@ -281,6 +202,85 @@ export default function Home() {
                         <span key={i} className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-xs">{tech}</span>
                       ))}
                     </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* 찬스웨이브 */}
+            <div className="mb-16">
+              <div className="bg-blue-50 p-8 rounded-xl shadow-lg border-l-4 border-blue-500">
+                <div className="flex items-center justify-between mb-4">
+                  <h3 className="text-2xl font-bold text-gray-900">주식회사 찬스웨이브커뮤니케이션</h3>
+                  <span className="text-gray-500 text-sm">2024.02 - 2025.09</span>
+                </div>
+                <p className="text-gray-600 mb-6">정규직</p>
+
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                  <div className="bg-white p-6 rounded-lg shadow-md">
+                    <div className="flex items-center mb-4">
+                      <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4 text-2xl">
+                        🏦
+                      </div>
+                      <h4 className="text-lg font-semibold text-gray-900">하나은행 놀이터 API 개발</h4>
+                    </div>
+                    <p className="text-sm text-blue-600 mb-3">백엔드 선임연구원</p>
+                    <p className="text-gray-700 mb-4">OAuth 기반 토큰 발급 API와 최신 뉴스 데이터 API 개발</p>
+                    <div className="flex flex-wrap gap-2">
+                      {['OAuth', 'API Development', 'Backend'].map((tech, i) => (
+                        <span key={i} className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">{tech}</span>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="bg-white p-6 rounded-lg shadow-md">
+                    <div className="flex items-center mb-4">
+                      <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4 text-2xl">
+                        💰
+                      </div>
+                      <h4 className="text-lg font-semibold text-gray-900">하나원큐 놀이터 머니트렌드 웹뷰</h4>
+                    </div>
+                    <p className="text-sm text-blue-600 mb-3">프론트 선임매니저</p>
+                    <p className="text-gray-700 mb-4">금융 콘텐츠 에디터 개발 및 웹뷰 프론트/백엔드 개발</p>
+                    <div className="flex flex-wrap gap-2">
+                      {['React', 'Next.js', 'TypeScript', 'Tiptap', 'MongoDB', 'Redis'].map((tech, i) => (
+                        <span key={i} className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">{tech}</span>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="bg-white p-6 rounded-lg shadow-md">
+                    <div className="flex items-center mb-4">
+                      <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4 text-2xl">
+                        🤖
+                      </div>
+                      <h4 className="text-lg font-semibold text-gray-900">AI 서비스 검색 MVP</h4>
+                    </div>
+                    <p className="text-sm text-blue-600 mb-3">프론트 선임매니저</p>
+                    <p className="text-gray-700 mb-4">AI 서비스 카테고리별 랭킹 및 검색 기능, SEO 최적화</p>
+                    <div className="flex flex-wrap gap-2">
+                      {['React', 'Next.js', 'TypeScript', 'SEO'].map((tech, i) => (
+                        <span key={i} className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">{tech}</span>
+                      ))}
+                    </div>
+                    <a href="http://31ais.com" className="text-blue-500 hover:underline text-sm block mt-2">31ais.com →</a>
+                  </div>
+
+                  <div className="bg-white p-6 rounded-lg shadow-md">
+                    <div className="flex items-center mb-4">
+                      <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mr-4 text-2xl">
+                        🌱
+                      </div>
+                      <h4 className="text-lg font-semibold text-gray-900">퍼핏랩 ESG 데이터 플랫폼</h4>
+                    </div>
+                    <p className="text-sm text-blue-600 mb-3">프론트 선임매니저</p>
+                    <p className="text-gray-700 mb-4">ESG 공공/민간 데이터, 뉴스, 랭킹 제공 사이트 (반응형)</p>
+                    <div className="flex flex-wrap gap-2">
+                      {['React', 'Next.js', 'TypeScript', 'Zustand', 'MongoDB', 'SEO'].map((tech, i) => (
+                        <span key={i} className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-xs">{tech}</span>
+                      ))}
+                    </div>
+                    <a href="https://pufit.kr" className="text-blue-500 hover:underline text-sm block mt-2">pufit.kr →</a>
                   </div>
                 </div>
               </div>
