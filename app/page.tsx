@@ -255,7 +255,10 @@ export default function Home() {
                       <h4 className="text-lg font-semibold text-gray-900">SCM 공급망 관리 시스템</h4>
                     </div>
                     <p className="text-sm text-emerald-600 mb-3">프론트엔드 개발자</p>
-                    <p className="text-gray-700 mb-4">공급사 대상 ESG 설문을 생성·배포·운영하는 공급망 관리 플랫폼 프론트엔드 개발</p>
+                    <p className="text-gray-700 mb-3">공급사 대상 ESG 설문을 생성·배포·운영하는 공급망 관리 플랫폼 프론트엔드 개발</p>
+                    <div className="bg-blue-50 border-l-3 border-blue-400 p-3 rounded mb-4">
+                      <p className="text-blue-800 text-sm font-medium">약 2년간 완성되지 못한 프로젝트를 단독으로 인수해 4개월 만에 리뉴얼 완성 및 안정화</p>
+                    </div>
                     <div className="space-y-2 mb-4">
                       <div className="text-sm text-gray-700">
                         <span className="font-semibold">설문 생성 및 대상 설정:</span> 설문 생성, 응답 대상 공급사 지정, 담당자 배정 화면 개발
