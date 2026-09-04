@@ -201,6 +201,69 @@ export default function Home() {
               </div>
             </div>
 
+            {/* i-ESG Experience */}
+            <div className="mb-16">
+              <div className="bg-emerald-50 p-8 rounded-xl shadow-lg border-l-4 border-emerald-500">
+                <div className="flex items-center justify-between mb-4">
+                  <h3 className="text-2xl font-bold text-gray-900">주식회사 아이이에스지 (i-ESG)</h3>
+                  <span className="text-gray-500 text-sm">2022.07 - 2024.01 (1년 6개월)</span>
+                </div>
+                <p className="text-gray-600 mb-6">정규직 • 풀스택 개발자</p>
+
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                  <div className="bg-white p-6 rounded-lg shadow-md">
+                    <div className="flex items-center mb-4">
+                      <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mr-4 text-2xl">
+                        📊
+                      </div>
+                      <h4 className="text-lg font-semibold text-gray-900">ESG 진단·평가 플랫폼</h4>
+                    </div>
+                    <p className="text-sm text-emerald-600 mb-3">풀스택 개발자</p>
+                    <p className="text-gray-700 mb-4">프로덕션 운영 중인 6개 진단 서비스(KOSA, GDIN, UNGC, EU, UAE, CU)의 프론트엔드·백엔드 담당</p>
+                    <div className="space-y-2 mb-4">
+                      <div className="text-sm text-gray-700">
+                        <span className="font-semibold">벤치마크 백분위 랭킹:</span> SQL 윈도우 함수(CUME_DIST, PERCENT_RANK)로 기업별 상대 순위 산출
+                      </div>
+                      <div className="text-sm text-gray-700">
+                        <span className="font-semibold">점수 구간 히스토그램:</span> WITH RECURSIVE + CROSS JOIN으로 점수 구간 구성, 결측 구간도 0으로 채워 연속성 보장
+                      </div>
+                      <div className="text-sm text-gray-700">
+                        <span className="font-semibold">섹션 점수 분포 집계:</span> Java Stream API와 가중 점수 산식으로 섹션 단위 점수 분포 집계, Optional 기반 null-safety 적용
+                      </div>
+                      <div className="text-sm text-gray-700">
+                        <span className="font-semibold">시각화:</span> ECharts 레이더/도넛 차트로 진단 결과 리포트 구현
+                      </div>
+                      <div className="text-sm text-gray-700">
+                        <span className="font-semibold">API 마이그레이션:</span> 주소 우편번호 라이브러리를 Google Places API로 마이그레이션
+                      </div>
+                      <div className="text-sm text-gray-700">
+                        <span className="font-semibold">전자서명 라이브러리:</span> Canvas 기반 렌더링, core/react 패키지 분리로 자체 설계
+                      </div>
+                    </div>
+                    <div className="flex flex-wrap gap-2">
+                      {['Java', 'Spring Boot', 'MySQL', 'Next.js', 'TypeScript', 'ECharts', 'Canvas API', 'Google Places API'].map((tech, i) => (
+                        <span key={i} className="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-xs">{tech}</span>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="bg-white p-6 rounded-lg shadow-md border-2 border-dashed border-gray-300">
+                    <div className="flex items-center mb-4">
+                      <div className="w-12 h-12 bg-gray-200 rounded-lg flex items-center justify-center mr-4 text-2xl opacity-50">
+                        🚚
+                      </div>
+                      <h4 className="text-lg font-semibold text-gray-600">SCM 공급망 관리 시스템</h4>
+                    </div>
+                    <p className="text-sm text-gray-500 mb-3">풀스택 개발자</p>
+                    <p className="text-gray-500 mb-4">상세 내용 추가 예정</p>
+                    <div className="bg-gray-50 p-4 rounded text-center">
+                      <p className="text-gray-500 text-sm">준비 중인 섹션입니다</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             {/* Previous Experience */}
             <div className="space-y-8">
               <div className="bg-gray-50 p-6 rounded-lg shadow-md">
