@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import Navigation from './components/Navigation'
 import ProgressBar from './components/ProgressBar'
 import SideNavigation from './components/SideNavigation'
@@ -29,15 +30,12 @@ export default function Home() {
         <section id="about" className="min-h-screen bg-white flex items-center justify-center">
           <div className="max-w-4xl mx-auto px-4 text-center">
             <div className="mb-12">
-              <div className="w-64 h-64 mx-auto rounded-full bg-gradient-to-br from-blue-400 to-purple-500 shadow-lg flex items-center justify-center overflow-hidden">
-                <img 
+              <div className="relative w-64 h-64 mx-auto rounded-full bg-gradient-to-br from-blue-400 to-purple-500 shadow-lg overflow-hidden">
+                <Image
                   src="/profile_cho.jpeg"
                   alt="Profile"
-                  className="w-full h-full object-cover"
-                  onError={(e) => {
-                    e.currentTarget.style.display = 'none';
-                    if(e.currentTarget.parentElement) e.currentTarget.parentElement.innerHTML = '<div class="text-white text-6xl">👨‍💻</div>';
-                  }}
+                  fill
+                  className="object-cover"
                 />
               </div>
             </div>
@@ -98,12 +96,13 @@ export default function Home() {
                     {category.skills.map((skill, skillIndex) => (
                       <li key={skillIndex} className="flex items-center text-gray-700 text-lg">
                         <div className="w-12 h-12 bg-gray-50 rounded-lg flex items-center justify-center mr-4">
-                          <img 
-                            src={skill.icon} 
+                          <Image
+                            src={skill.icon}
                             alt={skill.name}
-                            className="w-8 h-8"
+                            width={32}
+                            height={32}
                             onError={(e) => {
-                              e.currentTarget.style.display = 'none';
+                              (e.currentTarget as HTMLImageElement).style.display = 'none';
                             }}
                           />
                         </div>
@@ -387,8 +386,8 @@ export default function Home() {
 
               <div className="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
                 <div className="flex items-center mb-6">
-                  <div className="w-16 h-16 bg-cyan-100 rounded-xl flex items-center justify-center mr-4 text-3xl">
-                    <img src="/ai-image-generator.png" alt="AI 이미지 생성기" className="w-full h-full object-cover" />
+                  <div className="relative w-16 h-16 bg-cyan-100 rounded-xl overflow-hidden mr-4">
+                    <Image src="/ai-image-generator.png" alt="AI 이미지 생성기" fill className="object-cover" />
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-gray-900">AI 이미지 생성기</h3>
@@ -452,18 +451,13 @@ export default function Home() {
                 <div className="flex flex-col lg:flex-row gap-8 items-center">
                   {/* 프로젝트 이미지 */}
                   <div className="flex-shrink-0">
-                    <img 
+                    <Image
                       src="/project2.png"
                       alt="지도 API 기반 심부름 플랫폼"
-                      className="max-w-full h-auto rounded-lg shadow-md"
-                      style={{ maxHeight: '400px', maxWidth: '500px' }}
-                      onError={(e) => {
-                        // 이미지 로드 실패시 대체 콘텐츠 표시
-                        e.currentTarget.style.display = 'none';
-                        if(e.currentTarget.parentElement) {
-                          e.currentTarget.parentElement.innerHTML = '<div class="flex items-center justify-center bg-gray-100 rounded-lg p-8 w-96 h-64"><span class="text-4xl">🗺️</span><span class="ml-4 text-gray-600">지도 기반 플랫폼</span></div>';
-                        }
-                      }}
+                      width={500}
+                      height={400}
+                      className="rounded-lg shadow-md"
+                      style={{ maxWidth: '500px', height: 'auto' }}
                     />
                   </div>
                   
@@ -515,7 +509,8 @@ export default function Home() {
             <div className="mb-16">
               <div className="bg-white p-8 rounded-xl shadow-lg">
                 <div className="flex flex-col lg:flex-row gap-8 items-center">
-                  <img src="/privatepjt2.png" alt="ERP 제조관리 시스템" className="max-w-full h-auto rounded-lg shadow-md" style={{ maxHeight: '400px', maxWidth: '500px' }} />                  
+                  <Image src="/privatepjt2.png" alt="ERP 제조관리 시스템" width={500} height={400} className="rounded-lg shadow-md" style={{ maxWidth: '500px', height: 'auto' }} />
+
                   {/* 프로젝트 설명 */}
                   <div className="flex-grow">
                     <div className="flex items-center mb-4">
@@ -610,7 +605,7 @@ export default function Home() {
                     <div className="flex items-center justify-center bg-gradient-to-br from-cyan-400 to-purple-500 rounded-lg p-8 w-96 h-64">
                       <div className="text-center text-white">
                         {/* <span className="text-6xl">🎨</span> */}
-                        <img src="/ai-image-generator.png" alt="AI 이미지 생성기" className="w-full h-full object-cover" />
+                        <Image src="/ai-image-generator.png" alt="AI 이미지 생성기" width={300} height={180} className="object-cover rounded" />
                         <p className="mt-4 text-lg font-semibold">AI 이미지 생성기</p>
                       </div>
                     </div>
@@ -692,7 +687,7 @@ export default function Home() {
                 <div className="flex flex-col lg:flex-row gap-8 items-center">
                   {/* 프로젝트 이미지 */}
                   <div className="flex-shrink-0">
-                    <img src="/secretaryai.png" alt="음성 비서 AI" className="w-100 h-auto rounded-lg" />
+                    <Image src="/secretaryai.png" alt="음성 비서 AI" width={400} height={300} className="rounded-lg h-auto" />
                   </div>
                   {/* 프로젝트 설명 */}
                   <div className="flex-grow">
