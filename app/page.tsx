@@ -804,9 +804,9 @@ export default function Home() {
               {/* Experience 4 */}
               <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
                 <div className="flex items-center px-8 pt-8 pb-4 gap-4">
-                  <div className="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center text-2xl flex-shrink-0">🗺️</div>
+                  <div className="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center text-2xl flex-shrink-0">🌐</div>
                   <div>
-                    <h3 className="text-xl font-bold text-gray-900">주소 API 서비스 종료 — Google Places API 마이그레이션</h3>
+                    <h3 className="text-xl font-bold text-gray-900">국내 주소 검색 → Google Places API 전환으로 글로벌 서비스 확장</h3>
                     <span className="text-sm text-orange-600">i-ESG · 2025</span>
                   </div>
                 </div>
@@ -817,9 +817,10 @@ export default function Home() {
                       <span className="font-semibold text-gray-800">어려웠던 점</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed">
-                      서비스에서 사용하던 주소 우편번호 라이브러리가 지원 종료 예정이었고,
-                      기존 라이브러리에 강하게 결합된 코드 여러 곳을 동시에 교체해야 했습니다.
-                      마이그레이션 중 서비스 중단 없이 전환해야 하는 점이 가장 까다로웠습니다.
+                      ESG 진단 서비스가 EU, UAE 등 해외 기업을 대상으로 확장되면서,
+                      국내 주소 체계에만 대응하던 기존 라이브러리로는 해외 기업 정보 입력이 불가능한 한계가 있었습니다.
+                      코드베이스 여러 곳에 라이브러리가 직접 결합되어 있어 교체 범위가 넓었고,
+                      운영 중인 서비스를 중단 없이 전환해야 하는 점이 까다로웠습니다.
                     </p>
                   </div>
                   <div className="px-8 py-6">
@@ -830,7 +831,8 @@ export default function Home() {
                     <p className="text-gray-600 text-sm leading-relaxed">
                       기존 라이브러리 인터페이스를 추상화하는 어댑터 레이어를 먼저 작성해
                       내부 호출 방식을 통일한 뒤, Google Places API로 단계적으로 교체했습니다.
-                      다운타임 없이 마이그레이션을 완료하고, 글로벌 주소 검색 지원 범위도 넓어졌습니다.
+                      다운타임 없이 전환을 완료했고, 덕분에 전 세계 어디서든 주소를 입력할 수 있게 되어
+                      해외 기업 대상 서비스 확장의 기반을 마련했습니다.
                     </p>
                   </div>
                 </div>
