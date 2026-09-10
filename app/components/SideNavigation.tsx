@@ -10,6 +10,7 @@ const SideNavigation = () => {
     { id: 'skills', label: 'Skills' },
     { id: 'projects', label: 'Projects' },
     { id: 'personal_projects', label: 'Personal' },
+    { id: 'experiences', label: '도전과 성장' },
     { id: 'contact', label: 'Contact' }
   ], [])
 

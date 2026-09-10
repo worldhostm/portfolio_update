@@ -41,13 +41,15 @@ export default function Home() {
             </div>
             <h1 className="text-5xl font-bold text-gray-900 mb-6">About Me</h1>
             <p className="text-xl text-gray-600 leading-relaxed mb-6">
-              안녕하세요! 저는 끊임없이 성장하는 풀스택 개발자입니다. 🚀<br />
-              현재 금융, AI, ESG 도메인에서 사용자 중심의 웹 서비스를 개발하고 있으며,<br />
-              Web3, AI/ML, 클라우드 네이티브 기술 등 미래 지향적인 기술 스택을 학습하며<br />
-              새로운 도전을 통해 더 나은 개발자로 발전하고자 합니다.
+              안녕하세요, 조성민입니다.<br />
+              금융·ESG·AI 도메인에서 실무 경험을 쌓아온 풀스택 개발자입니다.<br />
+              하나은행 OAuth API 개발과 하나원큐 머니트렌드 웹뷰 구축을 시작으로,<br />
+              현재는 i-ESG에서 6개 국제 ESG 진단 서비스의 백엔드(Java Spring Boot)와<br />
+              프론트엔드(Next.js, TypeScript)를 함께 담당하며 프로덕션 서비스를 운영하고 있습니다.
             </p>
             <p className="text-lg text-gray-500">
-              &quot;기술은 사람을 위해 존재한다&quot;는 철학으로 더 나은 사용자 경험을 만들어갑니다.
+              2년간 완성되지 못한 프로젝트를 인수해 4개월 만에 안정화한 경험처럼,<br />
+              어려운 상황에서도 끝까지 해결책을 찾아내는 개발자입니다.
             </p>
           </div>
         </section>
@@ -684,6 +686,157 @@ export default function Home() {
             </div>
             )}
 
+          </div>
+        </section>
+
+        {/* Experiences Section */}
+        <section id="experiences" className="min-h-screen bg-gradient-to-br from-slate-50 to-indigo-50 py-20">
+          <div className="max-w-5xl mx-auto px-4">
+            <h2 className="text-4xl font-bold text-center text-gray-900 mb-4">도전과 성장</h2>
+            <p className="text-center text-gray-500 mb-16">어려웠던 경험과 그것을 극복한 이야기</p>
+
+            <div className="space-y-10">
+
+              {/* Experience 1 */}
+              <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div className="flex items-center px-8 pt-8 pb-4 gap-4">
+                  <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-2xl flex-shrink-0">🔗</div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900">2년간 미완성 프로젝트 인수 — SCM 공급망 관리 시스템</h3>
+                    <span className="text-sm text-blue-600">찬스웨이브커뮤니케이션 · 2024</span>
+                  </div>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-0 border-t border-gray-100">
+                  <div className="px-8 py-6 border-b md:border-b-0 md:border-r border-gray-100">
+                    <div className="flex items-center mb-3">
+                      <span className="w-6 h-6 bg-red-100 text-red-600 rounded-full flex items-center justify-center text-xs font-bold mr-2">!</span>
+                      <span className="font-semibold text-gray-800">어려웠던 점</span>
+                    </div>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      약 2년간 여러 개발자가 손을 댔지만 완성되지 못한 프로젝트를 단독으로 인계받았습니다.
+                      기존 코드는 일관성이 없었고, 문서화도 부족해 어디서부터 시작해야 할지 막막했습니다.
+                      또한 촉박한 일정 안에 안정적인 서비스로 런칭해야 하는 압박이 있었습니다.
+                    </p>
+                  </div>
+                  <div className="px-8 py-6">
+                    <div className="flex items-center mb-3">
+                      <span className="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-xs font-bold mr-2">✓</span>
+                      <span className="font-semibold text-gray-800">극복 방법 & 결과</span>
+                    </div>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      전체 코드를 처음부터 직접 리뷰하며 도메인 구조를 파악하고, 우선순위를 정해 핵심 기능부터 재설계했습니다.
+                      Zod 스키마 기반 유효성 검사와 i18n 다국어 처리를 체계적으로 정비해
+                      <strong className="text-gray-800"> 4개월 만에 리뉴얼 완성 및 안정화</strong>에 성공했습니다.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Experience 2 */}
+              <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div className="flex items-center px-8 pt-8 pb-4 gap-4">
+                  <div className="w-12 h-12 bg-emerald-100 rounded-xl flex items-center justify-center text-2xl flex-shrink-0">📊</div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900">복잡한 통계 쿼리 설계 — ESG 벤치마크 랭킹 및 히스토그램</h3>
+                    <span className="text-sm text-emerald-600">i-ESG · 2025</span>
+                  </div>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-0 border-t border-gray-100">
+                  <div className="px-8 py-6 border-b md:border-b-0 md:border-r border-gray-100">
+                    <div className="flex items-center mb-3">
+                      <span className="w-6 h-6 bg-red-100 text-red-600 rounded-full flex items-center justify-center text-xs font-bold mr-2">!</span>
+                      <span className="font-semibold text-gray-800">어려웠던 점</span>
+                    </div>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      수천 개 기업의 ESG 점수를 기반으로 백분위 랭킹과 점수 구간 히스토그램을 실시간으로 제공해야 했습니다.
+                      단순 집계 쿼리로는 성능이 나오지 않았고, 점수 데이터가 없는 구간도 0으로 채워 연속적으로 표현해야 하는 요구사항이 특히 까다로웠습니다.
+                    </p>
+                  </div>
+                  <div className="px-8 py-6">
+                    <div className="flex items-center mb-3">
+                      <span className="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-xs font-bold mr-2">✓</span>
+                      <span className="font-semibold text-gray-800">극복 방법 & 결과</span>
+                    </div>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      SQL 윈도우 함수(<code className="bg-gray-100 px-1 rounded text-xs">CUME_DIST</code>, <code className="bg-gray-100 px-1 rounded text-xs">PERCENT_RANK</code>)로 백분위 랭킹을 산출하고,
+                      <code className="bg-gray-100 px-1 rounded text-xs">WITH RECURSIVE + CROSS JOIN</code>으로 점수 구간을 동적 생성해 결측 구간까지 0으로 채우는 연속 히스토그램을 구현했습니다.
+                      Java Stream API와 Optional로 null-safety도 확보했습니다.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Experience 3 */}
+              <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div className="flex items-center px-8 pt-8 pb-4 gap-4">
+                  <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center text-2xl flex-shrink-0">✍️</div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900">전자서명 라이브러리 전무 — Canvas 기반 직접 설계</h3>
+                    <span className="text-sm text-purple-600">i-ESG · 2025</span>
+                  </div>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-0 border-t border-gray-100">
+                  <div className="px-8 py-6 border-b md:border-b-0 md:border-r border-gray-100">
+                    <div className="flex items-center mb-3">
+                      <span className="w-6 h-6 bg-red-100 text-red-600 rounded-full flex items-center justify-center text-xs font-bold mr-2">!</span>
+                      <span className="font-semibold text-gray-800">어려웠던 점</span>
+                    </div>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      ESG 진단 리포트에 전자서명 기능이 필요했지만, 서비스 특성에 맞는 라이브러리가 없었습니다.
+                      기존 서드파티 솔루션은 비용이 크거나 커스터마이징이 불가능해 직접 구현해야 했고,
+                      React와 순수 JS 환경 모두를 지원해야 하는 조건이 더해졌습니다.
+                    </p>
+                  </div>
+                  <div className="px-8 py-6">
+                    <div className="flex items-center mb-3">
+                      <span className="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-xs font-bold mr-2">✓</span>
+                      <span className="font-semibold text-gray-800">극복 방법 & 결과</span>
+                    </div>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      Canvas API를 직접 활용한 전자서명 렌더링 엔진을 설계하고,
+                      core(순수 JS)와 react(React 래퍼) 패키지로 분리해 어떤 환경에서도 사용할 수 있도록 구조를 잡았습니다.
+                      덕분에 외부 의존성 없이 서비스 요구사항에 딱 맞는 전자서명을 제공할 수 있었습니다.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Experience 4 */}
+              <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div className="flex items-center px-8 pt-8 pb-4 gap-4">
+                  <div className="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center text-2xl flex-shrink-0">🗺️</div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-900">주소 API 서비스 종료 — Google Places API 마이그레이션</h3>
+                    <span className="text-sm text-orange-600">i-ESG · 2025</span>
+                  </div>
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-0 border-t border-gray-100">
+                  <div className="px-8 py-6 border-b md:border-b-0 md:border-r border-gray-100">
+                    <div className="flex items-center mb-3">
+                      <span className="w-6 h-6 bg-red-100 text-red-600 rounded-full flex items-center justify-center text-xs font-bold mr-2">!</span>
+                      <span className="font-semibold text-gray-800">어려웠던 점</span>
+                    </div>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      서비스에서 사용하던 주소 우편번호 라이브러리가 지원 종료 예정이었고,
+                      기존 라이브러리에 강하게 결합된 코드 여러 곳을 동시에 교체해야 했습니다.
+                      마이그레이션 중 서비스 중단 없이 전환해야 하는 점이 가장 까다로웠습니다.
+                    </p>
+                  </div>
+                  <div className="px-8 py-6">
+                    <div className="flex items-center mb-3">
+                      <span className="w-6 h-6 bg-green-100 text-green-600 rounded-full flex items-center justify-center text-xs font-bold mr-2">✓</span>
+                      <span className="font-semibold text-gray-800">극복 방법 & 결과</span>
+                    </div>
+                    <p className="text-gray-600 text-sm leading-relaxed">
+                      기존 라이브러리 인터페이스를 추상화하는 어댑터 레이어를 먼저 작성해
+                      내부 호출 방식을 통일한 뒤, Google Places API로 단계적으로 교체했습니다.
+                      다운타임 없이 마이그레이션을 완료하고, 글로벌 주소 검색 지원 범위도 넓어졌습니다.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
           </div>
         </section>
 

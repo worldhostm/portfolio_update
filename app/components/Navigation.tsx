@@ -17,7 +17,7 @@ const Navigation = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['about', 'skills', 'projects', 'contact']
+      const sections = ['about', 'skills', 'projects', 'experiences', 'contact']
       const scrollPosition = window.scrollY + 100
 
       for (const section of sections) {
@@ -46,6 +46,7 @@ const Navigation = () => {
             { id: 'about', label: 'About' },
             { id: 'skills', label: 'Skills' },
             { id: 'projects', label: 'Projects' },
+            { id: 'experiences', label: '도전과 성장' },
             { id: 'contact', label: 'Contact' }
           ].map((item) => (
             <button
