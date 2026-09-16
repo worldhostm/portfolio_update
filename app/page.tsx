@@ -324,11 +324,11 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-gray-900">캐치테이블 벤치마킹 사이트</h3>
-                    <span className="text-sm text-orange-600 font-medium">2024.07 ~ 진행중</span>
+                    <span className="text-sm text-orange-600 font-medium">2024.07 ~ 2024.07</span>
                   </div>
                 </div>
                 <div className="flex items-center justify-center">
-                  <span className="bg-orange-100 text-orange-800 px-4 py-2 rounded-full text-sm font-medium">개발 진행중</span>
+                  <span className="bg-gray-100 text-gray-600 px-4 py-2 rounded-full text-sm font-medium">완료</span>
                 </div>
                 <p className="text-gray-600 mt-4 text-center">
                   레스토랑 예약 서비스의 사용자 경험을 개선한 웹 플랫폼
@@ -347,11 +347,11 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-gray-900">탄소 감축 SaaS 플랫폼</h3>
-                    <span className="text-sm text-green-600 font-medium">2024.07 ~ 진행중</span>
+                    <span className="text-sm text-green-600 font-medium">2024.07 ~ 2024.07</span>
                   </div>
                 </div>
                 <div className="flex items-center justify-center">
-                  <span className="bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium">개발 진행중</span>
+                  <span className="bg-gray-100 text-gray-600 px-4 py-2 rounded-full text-sm font-medium">완료</span>
                 </div>
                 <p className="text-gray-600 mt-4 text-center">
                   기업의 탄소 배출량 관리 및 감축을 위한 통합 솔루션
@@ -370,7 +370,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-gray-900">위치기반 심부름 플랫폼 하이브리드 웹앱</h3>
-                    <span className="text-sm text-purple-600 font-medium">2024.08 ~ 진행중</span>
+                    <span className="text-sm text-purple-600 font-medium">2026.09 ~ 진행중</span>
                   </div>
                 </div>
                 <div className="flex items-center justify-center">
@@ -393,11 +393,11 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-gray-900">AI 이미지 생성기</h3>
-                    <span className="text-sm text-cyan-600 font-medium">2024.09 ~ 진행중</span>
+                    <span className="text-sm text-cyan-600 font-medium">2024.09 ~ 2024.09</span>
                   </div>
                 </div>
                 <div className="flex items-center justify-center">
-                  <span className="bg-cyan-100 text-cyan-800 px-4 py-2 rounded-full text-sm font-medium">개발 진행중</span>
+                  <span className="bg-gray-100 text-gray-600 px-4 py-2 rounded-full text-sm font-medium">완료</span>
                 </div>
                 <p className="text-gray-600 mt-4 text-center">
                   텍스트 프롬프트로 고품질 AI 이미지를 생성하는 웹 애플리케이션
@@ -417,11 +417,11 @@ export default function Home() {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-gray-900">음성 비서 AI - 스마트 일정/메모 관리</h3>
-                    <span className="text-sm text-emerald-600 font-medium">2024.09 ~ 진행중</span>
+                    <span className="text-sm text-emerald-600 font-medium">2024.09 ~ 2024.09</span>
                   </div>
                 </div>
                 <div className="flex items-center justify-center">
-                  <span className="bg-emerald-100 text-emerald-800 px-4 py-2 rounded-full text-sm font-medium">개발 진행중</span>
+                  <span className="bg-gray-100 text-gray-600 px-4 py-2 rounded-full text-sm font-medium">완료</span>
                 </div>
                 <p className="text-gray-600 mt-4 text-center">
                   Web Speech API 기반 음성 인식 웹 애플리케이션
@@ -474,7 +474,7 @@ export default function Home() {
                     
                     <div className="flex items-center mb-4">
                       <span className="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">개발 진행중</span>
-                      <span className="ml-3 text-gray-500 text-sm">2024.08 ~ 현재</span>
+                      <span className="ml-3 text-gray-500 text-sm">2026.09 ~ 현재</span>
                     </div>
                     
                     <div className="space-y-3 mb-6">
