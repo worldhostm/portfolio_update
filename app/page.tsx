@@ -448,6 +448,59 @@ export default function Home() {
           <div className="max-w-6xl mx-auto px-4">
             <h2 className="text-4xl font-bold text-center text-white mb-16">진행 중인 개인 프로젝트</h2>
 
+            {/* 3D RPG 브라우저 게임 */}
+            <div className="mb-16">
+              <div className="bg-slate-800/80 p-8 rounded-xl border border-slate-700 shadow-lg">
+                <div className="flex flex-col lg:flex-row gap-8 items-center">
+                  <div className="flex-shrink-0">
+                    <Image
+                      src="/rpg-game.png"
+                      alt="3D RPG 브라우저 게임"
+                      width={500}
+                      height={400}
+                      className="rounded-lg shadow-md border border-slate-700"
+                      style={{ maxWidth: '500px', height: 'auto' }}
+                    />
+                  </div>
+
+                  <div className="flex-grow">
+                    <div className="flex items-center mb-4">
+                      <div className="w-12 h-12 bg-purple-900/60 rounded-lg flex items-center justify-center mr-4 text-2xl">⚔️</div>
+                      <h3 className="text-2xl font-bold text-white">3D RPG 브라우저 게임</h3>
+                    </div>
+
+                    <div className="flex items-center mb-4">
+                      <span className="bg-green-900/60 text-green-400 px-3 py-1 rounded-full text-sm font-medium border border-green-700/40">개발 진행중</span>
+                      <span className="ml-3 text-slate-400 text-sm">2026.09 ~ 현재</span>
+                    </div>
+
+                    <div className="space-y-3 mb-6">
+                      <p className="text-slate-200 text-lg font-semibold">Three.js 기반 3D 아이소메트릭 턴제 RPG</p>
+                      <ul className="text-slate-400 space-y-2 list-disc list-inside">
+                        <li>Three.js를 활용한 3D 아이소메트릭 뷰 렌더링</li>
+                        <li>보스 몬스터 AI 및 HP 관리 시스템</li>
+                        <li>BGM / 효과음 사운드 시스템</li>
+                        <li>캐릭터 애니메이션 및 3D 오브젝트 배치</li>
+                      </ul>
+                    </div>
+
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      <span className="bg-orange-900/60 text-orange-300 px-3 py-1 rounded-full text-sm border border-orange-700/40">Three.js</span>
+                      <span className="bg-yellow-900/60 text-yellow-300 px-3 py-1 rounded-full text-sm border border-yellow-700/40">JavaScript</span>
+                      <span className="bg-blue-900/60 text-blue-300 px-3 py-1 rounded-full text-sm border border-blue-700/40">WebGL</span>
+                      <span className="bg-slate-700/60 text-slate-300 px-3 py-1 rounded-full text-sm border border-slate-600">HTML5</span>
+                    </div>
+
+                    <div className="bg-purple-900/30 p-4 rounded-lg border border-purple-700/30">
+                      <p className="text-purple-300 text-sm">
+                        <strong>주요 특징:</strong> 별도 설치 없이 브라우저에서 즉시 플레이 가능한 3D RPG. 그리드 타일 위를 이동하며 몬스터를 처치하고 대왕괴물 보스를 공략 게임을 구현했습니다.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             {/* Map API 기반 심부름 플랫폼 */}
             <div className="mb-16">
               <div className="bg-slate-800/80 p-8 rounded-xl border border-slate-700 shadow-lg">
@@ -497,7 +550,7 @@ export default function Home() {
 
                     <div className="bg-blue-900/30 p-4 rounded-lg border border-blue-700/30">
                       <p className="text-blue-300 text-sm">
-                        <strong>💡 주요 특징:</strong> 일상생활에서 필요한 다양한 심부름(배달, 대행, 구매 등)을
+                        <strong>주요 특징:</strong> 일상생활에서 필요한 다양한 심부름(배달, 대행, 구매 등)을
                         지도 기반으로 쉽게 요청하고 처리할 수 있는 O2O 플랫폼을 개발 중입니다.
                       </p>
                     </div>
@@ -522,7 +575,7 @@ export default function Home() {
                   <div className="w-12 h-12 bg-blue-900/60 rounded-xl flex items-center justify-center text-2xl flex-shrink-0">🔗</div>
                   <div>
                     <h3 className="text-xl font-bold text-white">2년간 미완성 프로젝트 인수 — SCM 공급망 관리 시스템</h3>
-                    <span className="text-sm text-blue-400">찬스웨이브커뮤니케이션 · 2024</span>
+                    <span className="text-sm text-blue-400">i-ESG · 2026</span>
                   </div>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-0 border-t border-slate-700">
@@ -585,40 +638,6 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Experience 3 */}
-              <div className="bg-slate-800/80 rounded-2xl border border-slate-700 shadow-lg overflow-hidden">
-                <div className="flex items-center px-8 pt-8 pb-4 gap-4">
-                  <div className="w-12 h-12 bg-purple-900/60 rounded-xl flex items-center justify-center text-2xl flex-shrink-0">✍️</div>
-                  <div>
-                    <h3 className="text-xl font-bold text-white">전자서명 라이브러리 전무 — Canvas 기반 직접 설계</h3>
-                    <span className="text-sm text-purple-400">i-ESG · 2025</span>
-                  </div>
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-0 border-t border-slate-700">
-                  <div className="px-8 py-6 border-b md:border-b-0 md:border-r border-slate-700">
-                    <div className="flex items-center mb-3">
-                      <span className="w-6 h-6 bg-red-900/60 text-red-400 rounded-full flex items-center justify-center text-xs font-bold mr-2 border border-red-700/50">!</span>
-                      <span className="font-semibold text-slate-200">어려웠던 점</span>
-                    </div>
-                    <p className="text-slate-400 text-sm leading-relaxed">
-                      ESG 진단 리포트에 전자서명 기능이 필요했지만, 서비스 특성에 맞는 라이브러리가 없었습니다.
-                      기존 서드파티 솔루션은 비용이 크거나 커스터마이징이 불가능해 직접 구현해야 했고,
-                      React와 순수 JS 환경 모두를 지원해야 하는 조건이 더해졌습니다.
-                    </p>
-                  </div>
-                  <div className="px-8 py-6">
-                    <div className="flex items-center mb-3">
-                      <span className="w-6 h-6 bg-green-900/60 text-green-400 rounded-full flex items-center justify-center text-xs font-bold mr-2 border border-green-700/50">✓</span>
-                      <span className="font-semibold text-slate-200">극복 방법 & 결과</span>
-                    </div>
-                    <p className="text-slate-400 text-sm leading-relaxed">
-                      Canvas API를 직접 활용한 전자서명 렌더링 엔진을 설계하고,
-                      core(순수 JS)와 react(React 래퍼) 패키지로 분리해 어떤 환경에서도 사용할 수 있도록 구조를 잡았습니다.
-                      덕분에 외부 의존성 없이 서비스 요구사항에 딱 맞는 전자서명을 제공할 수 있었습니다.
-                    </p>
-                  </div>
-                </div>
-              </div>
 
               {/* Experience 4 */}
               <div className="bg-slate-800/80 rounded-2xl border border-slate-700 shadow-lg overflow-hidden">
