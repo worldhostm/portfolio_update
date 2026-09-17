@@ -59,8 +59,8 @@ const SideNavigation = () => {
             <div
               className={`rounded-full transition-all duration-500 ease-in-out ${
                 activeSection === section.id
-                  ? 'w-8 h-3 bg-blue-500'
-                  : 'w-3 h-3 bg-gray-300 hover:bg-blue-300'
+                  ? 'w-8 h-3 bg-cyan-400'
+                  : 'w-3 h-3 bg-slate-600 hover:bg-cyan-500'
               }`}
             />
             <div className="absolute left-6 top-1/2 transform -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none">

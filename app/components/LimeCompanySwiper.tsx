@@ -60,10 +60,10 @@ const LimeCompanySwiper = () => {
   }
 
   return (
-    <div className="bg-gray-50 p-6 rounded-lg shadow-md">
+    <div className="bg-slate-800/70 p-6 rounded-lg border border-slate-700 shadow-md">
       <div className="flex items-center justify-between mb-6">
-        <h3 className="text-xl font-semibold text-gray-900">라임컴퍼니</h3>
-        <span className="text-gray-500 text-sm">2019.09 - 2022.06 (2년 10개월)</span>
+        <h3 className="text-xl font-semibold text-white">라임컴퍼니</h3>
+        <span className="text-slate-400 text-sm">2019.09 - 2022.06 (2년 10개월)</span>
       </div>
 
       <div className="relative">
@@ -85,17 +85,17 @@ const LimeCompanySwiper = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="min-w-[200px] h-[300px] bg-white p-4 rounded-lg shadow-sm flex-shrink-0 flex flex-col"
+              className="min-w-[200px] h-[300px] bg-slate-900/80 p-4 rounded-lg border border-slate-700 shadow-sm flex-shrink-0 flex flex-col"
               style={{ pointerEvents: isDragging ? 'none' : 'auto' }}
             >
               <div className="flex flex-col items-center mb-4">
                 <span className="text-3xl mb-2">{project.emoji}</span>
-                <h4 className="text-sm font-semibold text-blue-600 text-center leading-tight">{project.title}</h4>
+                <h4 className="text-sm font-semibold text-cyan-400 text-center leading-tight">{project.title}</h4>
               </div>
-              <p className="text-gray-700 text-xs mb-4 flex-grow text-center">{project.desc}</p>
+              <p className="text-slate-400 text-xs mb-4 flex-grow text-center">{project.desc}</p>
               <div className="flex flex-wrap gap-1 justify-center">
                 {project.tech.map((tech, i) => (
-                  <span key={i} className="bg-blue-100 text-blue-700 px-2 py-1 rounded text-xs">{tech}</span>
+                  <span key={i} className="bg-blue-900/60 text-blue-300 px-2 py-1 rounded text-xs border border-blue-700/40">{tech}</span>
                 ))}
               </div>
             </div>
