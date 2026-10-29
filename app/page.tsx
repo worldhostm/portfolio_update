@@ -105,7 +105,10 @@ export default function Home() {
                     { name: 'Express.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg' },
                     { name: 'Python', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg' },
                     { name: 'PostgreSQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg' },
-                    { name: 'MongoDB', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg' }
+                    { name: 'MongoDB', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg' },
+                    { name: 'MySQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg' },
+                    { name: 'Java', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg' },
+                    { name: 'Kotlin', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg' }
                   ]
                 },
                 {
@@ -116,7 +119,9 @@ export default function Home() {
                     { name: 'AWS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg' },
                     { name: 'Figma', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg' },
                     { name: 'Claude', icon: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/anthropic.svg' },
-                    { name: 'ChatGPT', icon: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/openai.svg' }
+                    { name: 'ChatGPT', icon: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/openai.svg' },
+                    { name: 'Gemini', icon: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/googlegemini.svg' },
+                    { name: 'Codex', icon: 'https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/openai.svg' }
                   ]
                 }
               ].map((category, index) => (
@@ -158,7 +163,7 @@ export default function Home() {
                   <h3 className="text-2xl font-bold text-white">주식회사 아이이에스지 (i-ESG)</h3>
                   <span className="bg-green-900/60 text-green-400 px-3 py-1 rounded-full text-sm font-medium border border-green-700/50">현재 재직중</span>
                 </div>
-                <p className="text-slate-400 mb-6">2025.10 ~ 현재 • 정규직</p>
+                <p className="text-slate-400 mb-6">2025.10 • 정규직</p>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                   <div className="bg-slate-800/80 p-6 rounded-lg border border-slate-700 shadow-md">
@@ -335,6 +340,62 @@ export default function Home() {
           <div className="max-w-6xl mx-auto px-4">
             <h2 className="text-4xl font-bold text-center text-white mb-16">진행 중인 개인 프로젝트</h2>
 
+            {/* Tiny Swords: 마지막 기사 */}
+            <div className="mb-16">
+              <div className="bg-slate-800/80 p-5 sm:p-8 rounded-xl border border-slate-700 shadow-lg">
+                <div className="flex flex-col lg:flex-row gap-8 items-center">
+                  <div className="w-full lg:w-1/2 flex-shrink-0">
+                    <Image
+                      src="/tiny-rpg.png"
+                      alt="Tiny Swords: 마지막 기사 플레이 화면 — 라벤홀 마을의 랜서와 NPC, 퀘스트 추적창, 미니맵"
+                      width={2048}
+                      height={1286}
+                      sizes="(min-width: 1024px) 500px, (min-width: 640px) calc(100vw - 96px), calc(100vw - 72px)"
+                      className="w-full h-auto rounded-lg shadow-md border border-slate-700"
+                    />
+                  </div>
+
+                  <div className="w-full min-w-0 flex-grow">
+                    <div className="flex items-center mb-4">
+                      <div className="w-12 h-12 flex-shrink-0 bg-emerald-900/60 rounded-lg flex items-center justify-center mr-4 text-2xl">🛡️</div>
+                      <h3 className="text-2xl font-bold text-white">Tiny Swords: 마지막 기사</h3>
+                    </div>
+
+                    <div className="flex flex-wrap items-center gap-3 mb-4">
+                      <span className="bg-green-900/60 text-green-400 px-3 py-1 rounded-full text-sm font-medium border border-green-700/40">개발 진행중</span>
+                      <span className="text-slate-400 text-sm">2026.09</span>
+                    </div>
+
+                    <div className="space-y-3 mb-6">
+                      <p className="text-slate-200 text-lg font-semibold">Phaser 3 기반 탑다운 2D 픽셀 액션 RPG</p>
+                      <ul className="text-slate-400 space-y-2 list-disc list-inside">
+                        <li>워리어·랜서·궁수 3개 직업과 속성 전투, 스킬 각성·진화</li>
+                        <li>스토리 퀘스트와 다지역 던전 탐험, 보스 패턴 전투</li>
+                        <li>장비 강화·재련, 채광·벌목·낚시와 현상수배</li>
+                        <li>모바일 터치 조작과 길찾기 기반 자동 사냥·퀘스트 이동</li>
+                        <li>슬롯별 진행 저장, 몬스터 도감·업적과 반복 도전 콘텐츠</li>
+                      </ul>
+                    </div>
+
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      <span className="bg-emerald-900/60 text-emerald-300 px-3 py-1 rounded-full text-sm border border-emerald-700/40">Phaser 3</span>
+                      <span className="bg-blue-900/60 text-blue-300 px-3 py-1 rounded-full text-sm border border-blue-700/40">TypeScript</span>
+                      <span className="bg-purple-900/60 text-purple-300 px-3 py-1 rounded-full text-sm border border-purple-700/40">Vite</span>
+                      <span className="bg-cyan-900/60 text-cyan-300 px-3 py-1 rounded-full text-sm border border-cyan-700/40">Capacitor</span>
+                    </div>
+
+                    <div className="bg-emerald-900/30 p-4 rounded-lg border border-emerald-700/30">
+                      <p className="text-emerald-300 text-sm">
+                        <strong>주요 특징:</strong> PC와 모바일 웹에서 즐기는 실시간 액션 RPG로,
+                        전투·탐험·생활·성장 시스템을 연결해 개발하고 있습니다.
+                        Capacitor 기반 Android 빌드와 원스토어 Web SDK의 앱 생명주기·광고 연동을 구현했습니다.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             {/* 3D RPG 브라우저 게임 */}
             <div className="mb-16">
               <div className="bg-slate-800/80 p-8 rounded-xl border border-slate-700 shadow-lg">
@@ -358,7 +419,7 @@ export default function Home() {
 
                     <div className="flex items-center mb-4">
                       <span className="bg-green-900/60 text-green-400 px-3 py-1 rounded-full text-sm font-medium border border-green-700/40">개발 진행중</span>
-                      <span className="ml-3 text-slate-400 text-sm">2026.09 ~ 현재</span>
+                      <span className="ml-3 text-slate-400 text-sm">2026.04</span>
                     </div>
 
                     <div className="space-y-3 mb-6">
@@ -411,7 +472,7 @@ export default function Home() {
 
                     <div className="flex items-center mb-4">
                       <span className="bg-green-900/60 text-green-400 px-3 py-1 rounded-full text-sm font-medium border border-green-700/40">개발 진행중</span>
-                      <span className="ml-3 text-slate-400 text-sm">2026.09 ~ 현재</span>
+                      <span className="ml-3 text-slate-400 text-sm">2026.03</span>
                     </div>
 
                     <div className="space-y-3 mb-6">
@@ -451,7 +512,7 @@ export default function Home() {
         {/* Experiences Section */}
         <section id="experiences" className="min-h-screen py-20 bg-slate-800/65">
           <div className="max-w-5xl mx-auto px-4">
-            <h2 className="text-4xl font-bold text-center text-white mb-4">도전과 성장</h2>
+            <h2 className="text-4xl font-bold text-center text-white mb-4">Challenges & Growth</h2>
             <p className="text-center text-slate-400 mb-16">어려웠던 경험과 그것을 극복한 이야기</p>
 
             <div className="space-y-10">
